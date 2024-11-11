@@ -1,51 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekonopedia Links</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/43749971" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+    <a id="profilePicture" href="#popup">
+      <img src="https://yt3.googleusercontent.com/vpAHqJ81WwMATXF3Qwi-8DeF-LGyYFU9IMYshajMAdeHI7hnhnOR8m9RAsMlxfHDGtL8HBiGWw=s160-c-k-c0x00ffffff-no-rj" alt="Profile Picture">
+    </a>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://yt3.googleusercontent.com/vpAHqJ81WwMATXF3Qwi-8DeF-LGyYFU9IMYshajMAdeHI7hnhnOR8m9RAsMlxfHDGtL8HBiGWw=s160-c-k-c0x00ffffff-no-rj" target="_blank">
+            <img src="https://yt3.googleusercontent.com/vpAHqJ81WwMATXF3Qwi-8DeF-LGyYFU9IMYshajMAdeHI7hnhnOR8m9RAsMlxfHDGtL8HBiGWw=s160-c-k-c0x00ffffff-no-rj" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          Membahas teori & aplikasi ilmu ekonomi di kehidupan sehari-hari...
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div id="userName">
+      @ekonopedia
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
+    <div id="links">
+      <a class="link" href="https://youtube.com/@ekonopedia" target="_blank">
+        <i class="fab fa-youtube-play">&nbsp;</i>YouTube
+      </a>
+      <a class="link" href="https://www.tiktok.com/@ekonopedia" target="_blank">
+        <i class="fab fa-tiktok">&nbsp;</i>TikTok
+      </a>
+      <a class="link" href="https://www.instagram.com/ekonopediaorg" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://twitter.com/ekonopediaorg" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>Twitter
+      </a>
+      <a class="link" href="https://myanimelist.net/profile/johnggli" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>MyAnimeList
+      </a>
     </div>
 
-    {% include analytics.html %}
+    <div id="hashtag">
+      #BeHappy❤
+    </div>
   </body>
 </html>
